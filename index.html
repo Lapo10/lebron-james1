@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBron James - La Leggenda del Basketball</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" loop></audio>
+    <audio id="transitionSound" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"></audio>
+    <audio id="cheeringSound" src="https://assets.mixkit.co/active_storage/sfx/2868/2868-preview.mp3"></audio>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">🏀 LEBRON JAMES 🏀</h1>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link" onclick="playTransition()">Home</a></li>
+                <li><a href="#career" class="nav-link" onclick="playTransition()">Carriera</a></li>
+                <li><a href="#stats" class="nav-link" onclick="playTransition()">Statistiche</a></li>
+                <li><a href="#gallery" class="nav-link" onclick="playTransition()">Galleria</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">LEBRON JAMES</h1>
+            <p class="hero-subtitle">The King of Basketball</p>
+            <p class="hero-description">Una leggenda del basket che ha trasformato il gioco</p>
+            <button class="cta-button" onclick="playCheering(); document.getElementById('bgMusic').play()">🎵 Inizia Esperienza</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1622194969767-55bc1f12a4d2?w=600&h=600&fit=crop" alt="LeBron James">
+        </div>
+    </section>
+
+    <!-- CAREER SECTION -->
+    <section id="career" class="career">
+        <h2 class="section-title">La Straordinaria Carriera</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item" style="animation-delay: 0s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2003 - Rookie Sensation</h3>
+                    <p>LeBron entra in NBA direttamente dal liceo con i Cleveland Cavaliers come prima scelta assoluta. Subito impatto sensazionale!</p>
+                    <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=300&h=200&fit=crop" alt="2003 Rookie">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 0.2s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2008-2010 - MVP Years</h3>
+                    <p>Vince i MVP Awards consecutivi e porta i Cavaliers ai massimi livelli della lega.</p>
+                    <img src="https://images.unsplash.com/photo-1546519638-68711109d298?w=300&h=200&fit=crop" alt="MVP Years">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 0.4s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2010 - The Decision</h3>
+                    <p>Si unisce al Miami Heat creando un super team con Dwyane Wade e Chris Bosh.</p>
+                    <img src="https://images.unsplash.com/photo-1516950260413-891fe1c1e675?w=300&h=200&fit=crop" alt="Miami Heat Years">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 0.6s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2012-2013 - Championship Domination</h3>
+                    <p>Vince due campionati NBA consecutivi con il Miami Heat e si afferma come il miglior giocatore al mondo.</p>
+                    <img src="https://images.unsplash.com/photo-1522096311891-74a82f6dbcd5?w=300&h=200&fit=crop" alt="Championships">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 0.8s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2014 - Return to Cleveland</h3>
+                    <p>Ritorna ai Cleveland Cavaliers con l'obiettivo di portarli al campionato.</p>
+                    <img src="https://images.unsplash.com/photo-1546519638-68711109d298?w=300&h=200&fit=crop" alt="Return to Cavaliers">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 1s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2016 - The Greatest Comeback</h3>
+                    <p>Ricuce da 3-1 nei Finals per vincere il primo campionato di Cleveland. Storico!</p>
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=300&h=200&fit=crop" alt="2016 Championship">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 1.2s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2018 - Lakers Era</h3>
+                    <p>Si trasferisce ai Los Angeles Lakers per scrivere un nuovo capitolo della sua leggenda.</p>
+                    <img src="https://images.unsplash.com/photo-1509885307050-d4066910ec1e?w=300&h=200&fit=crop" alt="Lakers">
+                </div>
+            </div>
+
+            <div class="timeline-item" style="animation-delay: 1.4s;">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>2020 - Lakers Championship</h3>
+                    <p>Vince il campionato NBA con i Lakers, il suo 4° titolo, consolidando il suo status di leggenda.</p>
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=300&h=200&fit=crop" alt="2020 Championship">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section id="stats" class="stats">
+        <h2 class="section-title">Statistiche Impressionanti</h2>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="41226">0</div>
+                <div class="stat-label">Punti in carriera (NBA all-time leader)</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="10876">0</div>
+                <div class="stat-label">Rimbalzi in carriera</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="10452">0</div>
+                <div class="stat-label">Assist in carriera</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">Campionati NBA</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="4">0</div>
+                <div class="stat-label">MVP Awards</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="19">0</div>
+                <div class="stat-label">All-Star Selections</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="13">0</div>
+                <div class="stat-label">All-NBA Team Selections</div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-number" data-target="27.2">0</div>
+                <div class="stat-label">Media punti per partita</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title">Galleria - I Momenti Leggendari</h2>
+        
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1522096311891-74a82f6dbcd5?w=400&h=400&fit=crop" alt="Momento leggendario 1">
+                <div class="gallery-overlay">
+                    <h3>Historic Moment</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1546519638-68711109d298?w=400&h=400&fit=crop" alt="Momento leggendario 2">
+                <div class="gallery-overlay">
+                    <h3>Championship Run</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=400&h=400&fit=crop" alt="Momento leggendario 3">
+                <div class="gallery-overlay">
+                    <h3>Glory Days</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&h=400&fit=crop" alt="Momento leggendario 4">
+                <div class="gallery-overlay">
+                    <h3>Peak Performance</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1542241066-7140c494934c?w=400&h=400&fit=crop" alt="Momento leggendario 5">
+                <div class="gallery-overlay">
+                    <h3>The King</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=400&h=400&fit=crop" alt="Momento leggendario 6">
+                <div class="gallery-overlay">
+                    <h3>Champion</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>🏀 LeBron James - The Greatest Basketball Player of All Time 🏀</p>
+            <p>Presentazione interattiva creata con ❤️ per gli appassionati di basket</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
